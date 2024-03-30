@@ -37,6 +37,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
+		"test": "vitest --watch=false ./tests/station$1.test.tsx",
 		"clean": "rimraf dist",
 		"fmt": "yarn fmt:js",
 		"fmt:dry": "yarn fmt:js:dry",
@@ -44,5 +45,5 @@
 		"fmt:js:dry": "prettier --check \"./src/**/*.js\"",
 		"lint": "eslint ./src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
 		"lint:fix": "eslint --ext .js ./src --fix"
+	  }
 	}
-}

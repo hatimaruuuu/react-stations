@@ -62,6 +62,9 @@ describe('Station No.5', () => {
     const changedImg = img.src
     expect(changedImg).not.toBeFalsy()
 
+    console.log("\n\n\n\n\n\n\n")
+    console.log(changedImg)
+    console.log("\n\n\n\n\n\n\n")
     expect(changedImg).not.toStrictEqual(initialImg)
   })
 })

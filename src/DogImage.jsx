@@ -1,7 +1,13 @@
-// @ts-check
+export const DogImage = props => {
+  // Check if props is defined and if it has a dogUrl property
 
-export const DogImage = () => {
-  return <></>
+  return (
+    <>
+    <div>
+      <p>dog</p>
+      <img src={props.imageUrl} alt="" />
+      </div>
+      </>
+  )
 }
 
-export default DogImage
